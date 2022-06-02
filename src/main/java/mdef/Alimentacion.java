@@ -3,6 +3,7 @@ package mdef;
 public class Alimentacion extends Producto implements AlimentacionInterfaz{
 
 	private boolean refrigerado;
+	private char ejemplo;
 
 	@Override
 	public boolean isRefrigerado() {

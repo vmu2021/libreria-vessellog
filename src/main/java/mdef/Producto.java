@@ -2,17 +2,9 @@ package mdef;
 
 public class Producto {
 
-	private long id;
 	private String descripcionProducto;
 	private double precio;
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
+	public Catalogo catalogo;
 
 	public String getDescripcionProducto() {
 		return descripcionProducto;
@@ -30,13 +22,21 @@ public class Producto {
 		this.precio = precio;
 	}
 
-	public Producto() {
+	public Catalogo getCatalogo() {
+		return catalogo;
 	}
 
-	public Producto(long id, String descripcionProducto, double precio) {
-		this.id = id;
+	public void setCatalogo(Catalogo catalogo) {
+		this.catalogo = catalogo;
+	}
+
+	public Producto(String descripcionProducto, double precio, Catalogo catalogo) {
 		this.descripcionProducto = descripcionProducto;
 		this.precio = precio;
+		this.catalogo = catalogo;
+	}
+
+	public Producto() {
 	}
 
 }

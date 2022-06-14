@@ -17,12 +17,12 @@ public class Alimentacion extends Producto implements AlimentacionInterfaz{
 	public Alimentacion() {
 	}
 
-	public Alimentacion(long id, String descripcionProducto, double precio, boolean refrigerado) {
-		super(id, descripcionProducto, precio);
+	public Alimentacion(boolean refrigerado) {
 		this.refrigerado = refrigerado;
 	}
 
 	
+
 	
 	
 }

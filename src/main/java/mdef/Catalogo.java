@@ -1,28 +1,34 @@
 package mdef;
 
+import java.util.Collection;
+
 public class Catalogo {
 
-	private long id;
 	private String descripcion;
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
+	public Collection<Producto> productos;
+
 	public String getDescripcion() {
 		return descripcion;
 	}
+
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public Catalogo() {
-		super();
-	}
-	public Catalogo(long id, String descripcion) {
-		this.id = id;
-		this.descripcion = descripcion;
+
+	public Collection<Producto> getProductos() {
+		return productos;
 	}
 
-	
+	public void setProductos(Collection<Producto> productos) {
+		this.productos = productos;
+	}
+
+	public Catalogo(String descripcion, Collection<Producto> productos) {
+		this.descripcion = descripcion;
+		this.productos = productos;
+	}
+
+	public Catalogo() {
+	}
+
 }

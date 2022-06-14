@@ -18,9 +18,13 @@ public class Menaje extends Producto implements MenajeInterfaz {
 		super();
 	}
 
-	public Menaje(long id, String descripcionProducto, double precio, boolean reciclable) {
-		super(id, descripcionProducto, precio);
+	public Menaje(boolean reciclable) {
 		this.reciclable = reciclable;
 	}
+
+	public Menaje(String descripcionProducto, double precio, Catalogo catalogo) {
+		super(descripcionProducto, precio, catalogo);
+	}
+
 
 }

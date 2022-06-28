@@ -2,41 +2,38 @@ package mdef;
 
 public class Producto {
 
-	private String descripcionProducto;
+	private long id;
+	private String descripcion;
 	private double precio;
-	public Catalogo catalogo;
-
-	public String getDescripcionProducto() {
-		return descripcionProducto;
+	public long getId() {
+		return id;
 	}
-
-	public void setDescripcionProducto(String descripcionProducto) {
-		this.descripcionProducto = descripcionProducto;
+	public void setId(long id) {
+		this.id = id;
 	}
-
+	
 	public double getPrecio() {
 		return precio;
 	}
-
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-
-	public Catalogo getCatalogo() {
-		return catalogo;
+	public String getDescripcion() {
+		return descripcion;
 	}
-
-	public void setCatalogo(Catalogo catalogo) {
-		this.catalogo = catalogo;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
-
-	public Producto(String descripcionProducto, double precio, Catalogo catalogo) {
-		this.descripcionProducto = descripcionProducto;
-		this.precio = precio;
-		this.catalogo = catalogo;
-	}
-
+	
 	public Producto() {
+		super();
 	}
+	public Producto(String descripcion, double precio) {
+		this.descripcion = descripcion;
+		this.precio = precio;
+	}
+	
+	
+	
 
 }

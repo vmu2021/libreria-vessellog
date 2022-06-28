@@ -16,15 +16,12 @@ public class Menaje extends Producto implements MenajeInterfaz {
 
 	public Menaje() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public Menaje(boolean reciclable) {
-		this.reciclable = reciclable;
+	public Menaje(String descripcion, boolean reciclable, double precio) {
+		super(descripcion, precio);
+		this.reciclable=reciclable;
 	}
-
-	public Menaje(String descripcionProducto, double precio, Catalogo catalogo) {
-		super(descripcionProducto, precio, catalogo);
-	}
-
 
 }

@@ -1,11 +1,9 @@
 package mdef;
 
-import java.util.Collection;
-
 public class Catalogo {
 
+	private long id;
 	private String descripcion;
-	public Collection<Producto> productos;
 
 	public String getDescripcion() {
 		return descripcion;
@@ -15,20 +13,19 @@ public class Catalogo {
 		this.descripcion = descripcion;
 	}
 
-	public Collection<Producto> getProductos() {
-		return productos;
+	public long getId() {
+		return id;
 	}
 
-	public void setProductos(Collection<Producto> productos) {
-		this.productos = productos;
-	}
-
-	public Catalogo(String descripcion, Collection<Producto> productos) {
-		this.descripcion = descripcion;
-		this.productos = productos;
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public Catalogo() {
+	}
+
+	public Catalogo(String descripcion) {
+		this.descripcion = descripcion;
 	}
 
 }

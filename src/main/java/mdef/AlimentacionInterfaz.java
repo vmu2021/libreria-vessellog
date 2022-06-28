@@ -2,8 +2,8 @@ package mdef;
 
 public interface AlimentacionInterfaz {
 
-	boolean isRefrigerado();
+	public boolean isRefrigerado();
 
-	void setRefrigerado(boolean refrigerado);
+	public void setRefrigerado(boolean refrigerado);
 
 }

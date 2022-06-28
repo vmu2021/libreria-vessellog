@@ -15,11 +15,15 @@ public class Alimentacion extends Producto implements AlimentacionInterfaz{
 	}
 
 	public Alimentacion() {
+		super();
 	}
 
-	public Alimentacion(boolean refrigerado) {
-		this.refrigerado = refrigerado;
+	public Alimentacion(String descripcion, double precio, boolean refrigerable) {
+		super(descripcion, precio);
+		this.refrigerado = refrigerable;
 	}
+
+	
 
 	
 

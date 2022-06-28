@@ -2,8 +2,8 @@ package mdef;
 
 public interface MenajeInterfaz {
 
-	boolean isReciclable();
+	public boolean isReciclable();
 
-	void setReciclable(boolean reciclable);
+	public void setReciclable(boolean reciclable);
 
 }
